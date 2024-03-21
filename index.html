@@ -13,5 +13,15 @@
         <button class="btn-calculator" type="button" onclick="calculate()">Calculate </button>
         <button class="btn-calculator" type="button" onclick="reset()">Reset</button>
     </div>
+    <script>
+        const value1 = document.getElementById("num1");
+        const answerText = document.getElementById("answer");
+
+        function calculate() {
+            const radius = parseInt(value1.value);
+            const area = 3.14 * radius;
+            answerText.innerHTML = `Area is : ${area}`;
+        }
+    </script>
 </body>
 </html>
